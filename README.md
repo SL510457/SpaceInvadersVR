@@ -2,6 +2,23 @@
 
 A VR Space Invaders-style game built in Unity for Meta Quest, using controller input and grab interactions.
 
+## Demo
+
+📺 [Watch the gameplay video](https://www.youtube.com/watch?v=19UlvniVfoo)
+
+## Gameplay
+
+Point the gun with your VR controller and pull the trigger to shoot down waves of enemies. The game spawns a 3D grid of "Space Invaders"-style enemies alongside a second enemy type ("Zombunny"); clear every enemy on screen to win, or lose if they overwhelm you first. A UI panel tracks how many enemies remain and lets you shoot it to start a new round or restart after game over.
+
+## Features
+
+- **VR shooting mechanics** — aim and fire using the Quest controller's index trigger, with bullets spawned and launched via physics
+- **Grab interaction** — objects in the scene can be picked up and held using `OVRGrabbable`-based hand grabbing
+- **Haptic feedback** — controller vibration on firing, driven by `OVRHaptics`
+- **Wave-based enemy spawning** — a configurable 3D grid (rows × columns × layers) of enemies generated at the start of each round
+- **Two enemy types** — classic grid-formation invaders plus a second "Zombunny" enemy with its own movement and health logic
+- **Game state management** — Not Started → Playing → Game Over / Won, with UI text and audio feedback for each state
+
 ## Requirements
 
 - Unity **2022.3.10f1** (or a compatible 2022.3 LTS patch)
