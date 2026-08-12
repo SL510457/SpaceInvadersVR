@@ -8,15 +8,19 @@ A VR Space Invaders-style game built in Unity for Meta Quest, using controller i
 
 ## Gameplay
 
-Point the gun with your VR controller and pull the trigger to shoot down waves of enemies. The game spawns a 3D grid of "Space Invaders"-style enemies alongside a second enemy type ("Zombunny"); clear every enemy on screen to win, or lose if they overwhelm you first. A UI panel tracks how many enemies remain and lets you shoot it to start a new round or restart after game over.
+1. **Pick up the gun** — a green gun sits on the ground; grab it with your VR controller (you can also drop it and pick it back up).
+2. **Start the game** — aim at the building in front of you and shoot it to begin.
+3. **Clear the air targets** — a formation of 8 airborne "Elephant" enemies (black with yellow markings) spawns. Shoot down all of them to win.
+4. **Survive the ground attack** — "Zombunny" enemies (blue glowing outline) spawn on the ground, detect your position, and walk toward you. Shoot them to avoid being attacked — but unlike the Elephants, you don't need to kill every Zombunny to win.
+5. **Win the game** — once all Elephant enemies are destroyed, "You win the game!!!" is displayed.
 
 ## Features
 
 - **VR shooting mechanics** — aim and fire using the Quest controller's index trigger, with bullets spawned and launched via physics
-- **Grab interaction** — objects in the scene can be picked up and held using `OVRGrabbable`-based hand grabbing
+- **Grab interaction** — the gun (and other objects) can be picked up, held, and dropped using `OVRGrabbable`-based hand grabbing
 - **Haptic feedback** — controller vibration on firing, driven by `OVRHaptics`
-- **Wave-based enemy spawning** — a configurable 3D grid (rows × columns × layers) of enemies generated at the start of each round
-- **Two enemy types** — classic grid-formation invaders plus a second "Zombunny" enemy with its own movement and health logic
+- **Wave-based aerial enemies** — a configurable 3D grid of "Elephant" enemies spawned at the start of each round; destroying all of them is the win condition
+- **Pursuing ground enemies** — "Zombunny" enemies track the player's position and approach to attack, adding a separate threat to watch for and shoot down
 - **Game state management** — Not Started → Playing → Game Over / Won, with UI text and audio feedback for each state
 
 ## Requirements
