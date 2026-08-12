@@ -4,7 +4,7 @@ A VR Space Invaders-style game built in Unity for Meta Quest, using controller i
 
 ## Demo
 
-📺 [Watch the gameplay video](https://www.youtube.com/watch?v=19UlvniVfoo)
+[![Watch the gameplay video](https://img.youtube.com/vi/19UlvniVfoo/maxresdefault.jpg)](https://www.youtube.com/watch?v=19UlvniVfoo)
 
 ## Gameplay
 
